@@ -1,11 +1,13 @@
 function mudouTamanho() {
     if (window.innerWidth >= 1349) {
+        const pe = document.getElementById('pe');
         pe.style.display = 'block'
     } else {
         pe.style.display = 'none'
     }
 }
 function clickMenu() {
+    const pe = document.getElementById('pe');
     if (pe.style.display == 'block') {
         pe.style.display = 'none'
     } else {
@@ -22,15 +24,13 @@ window.addEventListener('scroll', function(){
 window.onload = function() {
     const username = localStorage.getItem('usuario'); // Recupera o nome do usuário do armazenamento local
     const login = localStorage.getItem('login');
-    if(username == login) {
+    if(username == login && username != '' && login != '') {
       document.getElementById('user').textContent = 'Olá, ' + username + "!";
       document.getElementById('logout-button').style.display = 'block';
       document.getElementById('usu').style.display = 'none'; // Esconde as opções de login e cadastro
       document.getElementById('toggle-button').style.display = 'block';
-      document.getElementById('logout').style.display = 'block';
-      
   };
-}
+};
 
   function logout() {
     localStorage.removeItem('usuario'); // Remove o nome do usuário do armazenamento local
@@ -42,7 +42,7 @@ window.onload = function() {
     alert('Você foi deslogado.'); // Opcional: Mostra um alerta informando que o logout foi bem-sucedido
 
     window.location.href = "./index.html";
-  }
+  };
 
 let hamburguer = document.querySelector(".hamburguer");
 let menu = document.getElementById("topo");

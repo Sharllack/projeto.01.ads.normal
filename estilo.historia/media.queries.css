@@ -2,10 +2,6 @@
 
 @media screen and (max-width: 375px) {
 
-    body {
-        background: rgb(255, 255, 255);
-    }
-
     .hamburguer {
         display: block;
         z-index: 1;
@@ -19,7 +15,7 @@
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color:  rgb(212, 212, 212);
+        background-color: rgb(212, 212, 212);
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
 
@@ -102,9 +98,9 @@
         left: 0;
         width: 100vw;
         height: 100vh;
+        background-color: rgb(212, 212, 212);
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
-
 
         flex-direction: column;
         justify-content: space-around;
@@ -133,6 +129,16 @@
 
     #topo.active #logado div {
         opacity: 1;
+    }
+
+    #logout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logout-button {
+        margin-bottom: 30px;
     }
 
     header {
@@ -177,69 +183,13 @@
         display: none;
     }
 
-    .product-images { margin-right: 20px; margin-left: 5px;}
-    .thumbnail { width: 50px; height: auto; cursor: pointer; }
-    .thumbnail:hover { opacity: 0.6; }
-    .main-image { width: 100%; height: auto; border: 1px solid #ddd; }
-    .product-info { flex-grow: 1; }
-    .product-info h1 {
-        font-size: 1.3em;
+    footer {
+        font-size: .5em;
     }
-    .price { color: rgb(0, 0, 0); font-weight: bold; margin-top: 20px;
-        font-size: .7em;
-    }
-    .buy-button { background-color: blue; color: white; padding: 10px 20px; text-decoration: none; display: block; margin-top: 20px; border: none; cursor: pointer; width: 100%;}
-    .hidden {
-        display: none;
-    }
+}
 
+@media screen and (min-width: 375px) and (max-width: 538px) {
     
-#produtoContainer {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    width: 100%;
-    justify-content: center;
-    margin: auto;
-    padding: 15px;
-}
-
-#desc {
-    margin-top: 20px;
-    background-color: rgb(112, 112, 112);
-    color: rgb(255, 255, 255);
-    border: none;
-    width: 100%;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-#descricaoProduto {
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    margin-top: 10px;
-    font-size: .5em;
-    margin-bottom: 20px;
-}
-
-.parc {
-    margin-top: 10px;
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: .7em;
-}
-
-footer {
-    font-size: .5em;
-}
-}
-
-@media screen and (min-width: 375px) and (max-width: 550px) {
-
-    body {
-        background: rgb(255, 255, 255);
-    }
-
     .hamburguer {
         display: block;
         z-index: 1;
@@ -253,7 +203,7 @@ footer {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color:  rgb(212, 212, 212);
+        background-color: rgb(212, 212, 212);
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
 
@@ -336,15 +286,25 @@ footer {
         left: 0;
         width: 100vw;
         height: 100vh;
+        background-color: rgb(212, 212, 212);
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
-
 
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         gap: 0;
         pointer-events: none;
+    }
+
+    #logout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logout-button {
+        margin-bottom: 30px;
     }
 
     #logado div {
@@ -372,23 +332,20 @@ footer {
     header {
         position: sticky;
         top: -1px;
+        padding: 0px;
     }
 
     header h1 {
         justify-content: space-between;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     #pe {
         display: none;
-        text-align: center;
     }
 
     #pe a {
         width: 100vw;
-        align-items: center;
     }
 
     #title {
@@ -396,83 +353,24 @@ footer {
     }
 
     #title #img1 {
-        width: 40px;
+        width: 50px;
     }
 
     #title #img2 {
-        width: 60px;
+        width: 50px;
         height: 40px;
     }
 
     #idpes {
         display: none;
     }
-    header h1 hr {
-        display: none;
+
+    footer {
+        font-size: .6em;
     }
-
-    .product-images { margin-right: 20px; margin-left: 5px;}
-    .thumbnail { width: 50px; height: auto; cursor: pointer; }
-    .thumbnail:hover { opacity: 0.6; }
-    .main-image { width: 100%; height: auto; border: 1px solid #ddd; }
-    .product-info { flex-grow: 1; }
-    .product-info h1 {
-        font-size: 1.3em;
-    }
-    .price { color: rgb(0, 0, 0); font-weight: bold; margin-top: 20px;
-        font-size: .7em;
-    }
-    .buy-button { background-color: blue; color: white; padding: 10px 20px; text-decoration: none; display: block; margin-top: 20px; border: none; cursor: pointer; width: 100%;}
-    .hidden {
-        display: none;
-    }
-
-    
-#produtoContainer {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    width: 100%;
-    justify-content: center;
-    margin: auto;
-    padding: 25px;
 }
 
-#desc {
-    margin-top: 20px;
-    background-color: rgb(112, 112, 112);
-    color: rgb(255, 255, 255);
-    border: none;
-    width: 100%;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-#descricaoProduto {
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    margin-top: 10px;
-    font-size: .5em;
-    margin-bottom: 20px;
-}
-
-.parc {
-    margin-top: 10px;
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: .7em;
-}
-
-footer {
-    font-size: .5em;
-}
-}
-
-@media screen and (min-width: 550px) and (max-width: 700px) {
-
-    body {
-        background-color: white;
-    }
+@media screen and (min-width: 538px) and (max-width: 628px) {
 
     .hamburguer {
         display: block;
@@ -487,7 +385,7 @@ footer {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color:  rgb(212, 212, 212);
+        background-color: rgb(212, 212, 212);
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
 
@@ -558,6 +456,14 @@ footer {
         top: -7px;
     }
 
+    #pe {
+        display: none;
+    }
+
+    #pe a {
+        width: 100vw;
+    }
+
     #logado div {
         margin-left: 0px;
     }
@@ -570,15 +476,25 @@ footer {
         left: 0;
         width: 100vw;
         height: 100vh;
+        background-color: rgb(212, 212, 212);
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
-
 
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         gap: 0;
         pointer-events: none;
+    }
+
+    #logout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logout-button {
+        margin-bottom: 30px;
     }
 
     #logado div {
@@ -610,104 +526,20 @@ footer {
 
     header h1 {
         justify-content: space-between;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 1em;
-    }
-
-    #pe {
-        display: none;
-        text-align: center;
-    }
-
-    #pe a {
-        width: 100vw;
-        align-items: center;
-    }
-
-    #title {
-        margin: auto;
-    }
-
-    #title #img1 {
-        width: 40px;
-    }
-
-    #title #img2 {
-        width: 60px;
-        height: 40px;
+        font-size: 1.3em;
     }
 
     #idpes {
         display: none;
     }
-    header h1 hr {
-        display: none;
+
+    footer {
+        font-size: .9em;
     }
-
-    .product-images { margin-right: 20px; margin-left: 5px;}
-    .thumbnail { width: 50px; height: auto; cursor: pointer; }
-    .thumbnail:hover { opacity: 0.6; }
-    .main-image { width: 90%; height: auto; border: 1px solid #ddd; }
-    .product-info { flex-grow: 1; }
-    .product-info h1 {
-        font-size: 1.3em;
-    }
-    .price { color: rgb(0, 0, 0); font-weight: bold; margin-top: 20px;
-        font-size: .7em;
-    }
-    .buy-button { background-color: blue; color: white; padding: 10px 20px; text-decoration: none; display: block; margin-top: 20px; border: none; cursor: pointer; width: 90%;}
-    .hidden {
-        display: none;
-    }
-
-    
-#produtoContainer {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    width: 100%;
-    justify-content: center;
-    margin: auto;
-    padding: 25px;
 }
 
-#desc {
-    margin-top: 20px;
-    background-color: rgb(112, 112, 112);
-    color: rgb(255, 255, 255);
-    border: none;
-    width: 90%;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-#descricaoProduto {
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    margin-top: 10px;
-    font-size: .5em;
-    margin-bottom: 20px;
-}
-
-.parc {
-    margin-top: 10px;
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: .7em;
-}
-
-footer {
-    font-size: .5em;
-}
-}
-
-@media screen and (min-width: 700px) and (max-width: 1349px) {
-
-    body {
-        background-color: white;
-    }
-
+@media screen and (min-width: 628px) and (max-width: 1349px) {
+        
     .hamburguer {
         display: block;
         z-index: 1;
@@ -721,7 +553,7 @@ footer {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color:  rgb(212, 212, 212);
+        background-color: rgb(212, 212, 212);
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
 
@@ -792,6 +624,14 @@ footer {
         top: -7px;
     }
 
+    #pe {
+        display: none;
+    }
+
+    #pe a {
+        width: 100vw;
+    }
+
     #logado div {
         margin-left: 0px;
     }
@@ -804,15 +644,25 @@ footer {
         left: 0;
         width: 100vw;
         height: 100vh;
+        background-color: rgb(212, 212, 212);
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
-
 
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         gap: 0;
         pointer-events: none;
+    }
+
+    #logout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logout-button {
+        margin-bottom: 30px;
     }
 
     #logado div {
@@ -842,96 +692,29 @@ footer {
         top: -1px;
     }
 
-    header h1 {
-        justify-content: space-between;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 1em;
-    }
-
-    #pe {
-        display: none;
-        text-align: center;
-    }
-
-    #pe a {
-        width: 100vw;
-        align-items: center;
-    }
-
     #title {
-        margin: auto;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1349px) {
+
+    #topo a {
+        padding: 3px;
     }
 
-    #title #img1 {
-        width: 40px;
+    .logos {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
     }
 
-    #title #img2 {
-        width: 60px;
-        height: 40px;
-    }
-
-    #idpes {
-        display: none;
-    }
-    header h1 hr {
-        display: none;
-    }
-
-    .product-images { margin-right: 20px; margin-left: 5px;}
-    .thumbnail { width: 50px; height: auto; cursor: pointer; }
-    .thumbnail:hover { opacity: 0.6; }
-    .main-image { width:50%; height: auto; border: 1px solid #ddd; }
-    .product-info { flex-grow: 1; }
-    .product-info h1 {
-        font-size: 1.3em;
-    }
-    .price { color: rgb(0, 0, 0); font-weight: bold; margin-top: 20px;
-        font-size: .7em;
-    }
-    .buy-button { background-color: blue; color: white; padding: 10px 20px; text-decoration: none; display: block; margin-top: 20px; border: none; cursor: pointer; width: 100%;}
-    .hidden {
+    #burguer {
         display: none;
     }
 
-    
-#produtoContainer {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    width: 100%;
-    justify-content: center;
-    margin: auto;
-    padding: 25px;
-}
-
-#desc {
-    margin-top: 20px;
-    background-color: rgb(112, 112, 112);
-    color: rgb(255, 255, 255);
-    border: none;
-    width: 100%;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-#descricaoProduto {
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    margin-top: 10px;
-    font-size: .5em;
-    margin-bottom: 20px;
-}
-
-.parc {
-    margin-top: 10px;
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: .7em;
-}
-
-footer {
-    font-size: .5em;
-}
+    #pe > ul > li > a:hover {
+        background-color: rgb(94, 93, 93);
+        transition-duration: .5s;
+    }
 }

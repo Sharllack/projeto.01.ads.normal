@@ -27,41 +27,46 @@
         pointer-events: none;
     }
 
-    #usu a {
+    #redes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #usu a, #redes a{
         font-size: 24px;
         opacity: 0;
     }
 
-    #usu li:nth-child(1) a {
+    #usu li:nth-child(1) a, #redes li:nth-child(1) a {
         transition: .5s .2s;
     }
 
-    #usu li:nth-child(2) a {
+    #redes li:nth-child(2) a {
         transition: .5s .4s;
     }
 
-    #usu li:nth-child(3) a {
+    #redes li:nth-child(3) a {
         transition: .5s .6s;
     }
 
-    #usu li:nth-child(4) a {
+    #redes li:nth-child(4) a {
         transition: .5s .8s;
     }
 
-    #usu li:nth-child(5) a {
+    #redes li:nth-child(5) a {
         transition: .5s 1s;
     }
 
-    #usu li:nth-child(6) a {
+    #usu li:nth-child(6) a, #redes li:nth-child(6) a {
         transition: .5s 1.2s;
     }
 
-    #topo.active #usu  {
+    #topo.active #usu, #topo.active #redes  {
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
     }
 
-    #topo.active #usu a {
+    #topo.active #usu a, #topo.active #redes a {
         opacity: 1;
     }
 
@@ -97,9 +102,8 @@
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
 
-
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         gap: 0;
         pointer-events: none;
@@ -125,6 +129,16 @@
 
     #topo.active #logado div {
         opacity: 1;
+    }
+
+    #logout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logout-button {
+        margin-bottom: 30px;
     }
 
     header {
@@ -376,41 +390,46 @@
         pointer-events: none;
     }
 
-    #usu a {
+    #redes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #usu a, #redes a{
         font-size: 24px;
         opacity: 0;
     }
 
-    #usu li:nth-child(1) a {
+    #usu li:nth-child(1) a, #redes li:nth-child(1) a {
         transition: .5s .2s;
     }
 
-    #usu li:nth-child(2) a {
+    #redes li:nth-child(2) a {
         transition: .5s .4s;
     }
 
-    #usu li:nth-child(3) a {
+    #redes li:nth-child(3) a {
         transition: .5s .6s;
     }
 
-    #usu li:nth-child(4) a {
+    #redes li:nth-child(4) a {
         transition: .5s .8s;
     }
 
-    #usu li:nth-child(5) a {
+    #redes li:nth-child(5) a {
         transition: .5s 1s;
     }
 
-    #usu li:nth-child(6) a {
+    #usu li:nth-child(6) a, #redes li:nth-child(6) a {
         transition: .5s 1.2s;
     }
 
-    #topo.active #usu {
+    #topo.active #usu, #topo.active #redes  {
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
     }
 
-    #topo.active #usu a {
+    #topo.active #usu a, #topo.active #redes a {
         opacity: 1;
     }
 
@@ -446,12 +465,21 @@
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
 
-
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         gap: 0;
         pointer-events: none;
+    }
+
+    #logout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logout-button {
+        margin-bottom: 30px;
     }
 
     #logado div {
@@ -719,41 +747,46 @@
         pointer-events: none;
     }
 
-    #usu a {
+    #redes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #usu a, #redes a{
         font-size: 24px;
         opacity: 0;
     }
 
-    #usu li:nth-child(1) a {
+    #usu li:nth-child(1) a, #redes li:nth-child(1) a {
         transition: .5s .2s;
     }
 
-    #usu li:nth-child(2) a {
+    #redes li:nth-child(2) a {
         transition: .5s .4s;
     }
 
-    #usu li:nth-child(3) a {
+    #redes li:nth-child(3) a {
         transition: .5s .6s;
     }
 
-    #usu li:nth-child(4) a {
+    #redes li:nth-child(4) a {
         transition: .5s .8s;
     }
 
-    #usu li:nth-child(5) a {
+    #redes li:nth-child(5) a {
         transition: .5s 1s;
     }
 
-    #usu li:nth-child(6) a {
+    #usu li:nth-child(6) a, #redes li:nth-child(6) a {
         transition: .5s 1.2s;
     }
 
-    #topo.active #usu {
+    #topo.active #usu, #topo.active #redes  {
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
     }
 
-    #topo.active #usu a {
+    #topo.active #usu a, #topo.active #redes a {
         opacity: 1;
     }
 
@@ -797,12 +830,21 @@
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
 
-
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         gap: 0;
         pointer-events: none;
+    }
+
+    #logout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logout-button {
+        margin-bottom: 30px;
     }
 
     #logado div {
@@ -1048,41 +1090,46 @@
         pointer-events: none;
     }
 
-    #usu a {
+    #redes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #usu a, #redes a{
         font-size: 24px;
         opacity: 0;
     }
 
-    #usu li:nth-child(1) a {
+    #usu li:nth-child(1) a, #redes li:nth-child(1) a {
         transition: .5s .2s;
     }
 
-    #usu li:nth-child(2) a {
+    #redes li:nth-child(2) a {
         transition: .5s .4s;
     }
 
-    #usu li:nth-child(3) a {
+    #redes li:nth-child(3) a {
         transition: .5s .6s;
     }
 
-    #usu li:nth-child(4) a {
+    #redes li:nth-child(4) a {
         transition: .5s .8s;
     }
 
-    #usu li:nth-child(5) a {
+    #redes li:nth-child(5) a {
         transition: .5s 1s;
     }
 
-    #usu li:nth-child(6) a {
+    #usu li:nth-child(6) a, #redes li:nth-child(6) a {
         transition: .5s 1.2s;
     }
 
-    #topo.active #usu {
+    #topo.active #usu, #topo.active #redes  {
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
     }
 
-    #topo.active #usu a {
+    #topo.active #usu a, #topo.active #redes a {
         opacity: 1;
     }
 
@@ -1126,12 +1173,21 @@
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
 
-
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         gap: 0;
         pointer-events: none;
+    }
+
+    #logout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logout-button {
+        margin-bottom: 30px;
     }
 
     #logado div {
