@@ -46,7 +46,7 @@ body { font-family: Arial, sans-serif;
 }
 
 #usu {
-    font-size: 20px;
+    font-size: 15px;
     transition: .5s;
     background-color:  rgb(212, 212, 212);
 }
@@ -93,7 +93,7 @@ body { font-family: Arial, sans-serif;
 }
 
 #logado div {
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 header {
@@ -207,7 +207,7 @@ header h1 a {
     display: inline-block;
 }
 
-#pe a {
+.dropname {
     background-color: #073260;
     align-items: center;
     display: flex;
@@ -216,12 +216,13 @@ header h1 a {
     text-align: center;
     color: white;
     font-weight: bold;
-    padding: 11px 70px;
+    padding: 12px 70px;
     border-radius: 3px;
 }
 
 #pe li a:hover {
-    background-color: rgb(138, 137, 137);
+    background-color: #073260;
+    color: white;
     transition: .5s;
 }
 
@@ -229,9 +230,21 @@ header h1 a {
     position: absolute;
     border-radius: 0px 0px 5px 5px;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.459);
+    background-color:  rgb(212, 212, 212);
     display: none;
     width: auto;
     z-index: 10;
+    padding: 15px;
+}
+
+.dropdown-menu a {
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 15px;
 }
 
 .dropdown:hover .dropdown-menu{
@@ -269,7 +282,16 @@ header h1 a {
 }
 
 #burguer {
-    display: none;
+    background-color: #073260;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer; /* Para mudar o cursor */
+}
+
+#burguer:active {
+    background-color: rgb(138, 137, 137);
 }
 
 #pe > ul > li > a:hover {
@@ -318,3 +340,73 @@ footer {
     bottom: 0%;
     width: 100%;
 }
+
+#toggle-button {
+    position: relative;
+    width: 110px;
+    height: 34px;
+    margin-left: 10px;
+  }
+
+  #toggle-button input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider1 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../imagens/pexels-francesco-ungaro-998641.jpg');
+    background-position: center center;
+    background-size: contain;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider1:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background: url('../imagens/pexels-felixmittermeier-956981.jpg');
+    background-position: center center;
+    background-size: contain;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider1 {
+    background: url('../imagens/pexels-felixmittermeier-956981.jpg');
+    background-position: center center;
+    background-size: contain;
+  }
+
+  input:checked + .slider1:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background: url('../imagens/pexels-francesco-ungaro-998641.jpg');
+    background-position: center center;
+    background-size: contain;
+  }
+
+  /* Estilo adicional para o slider */
+  .slider1.round {
+    border-radius: 34px;
+  }
+
+  .slider1.round:before {
+    border-radius: 50%;
+  }
+
+  .icons {
+    text-decoration: none;
+    color: black;
+  }

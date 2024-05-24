@@ -11,10 +11,20 @@ const icon = document.querySelector('.material-symbols-outlined');
 const toggle = document.querySelector('#toggle');
 const user = document.getElementById('user');
 const logoutbtn = document.getElementById('logout-button');
+const drop = document.querySelectorAll('.dropdown-menu');
+const dropprod = document.querySelectorAll('.dropprod');
 
 toggle.addEventListener('change', function() {
   if (this.checked) {
       console.log('Toggle ON');
+      drop.forEach(function(elemento) {
+        elemento.style.backgroundColor = "black";
+        elemento.style.transition = ".5s";
+      });
+      dropprod.forEach(function(elemento) {
+        elemento.style.color = "white";
+        elemento.style.transition = ".5s";
+      });
       texto.style.backgroundColor = "#000000e8";
       texto.style.transition = '.5s';
       cont.style.color = "white";
@@ -43,6 +53,14 @@ toggle.addEventListener('change', function() {
       localStorage.setItem('darkMode', 'on');
       
   } else {
+    drop.forEach(function(elemento) {
+        elemento.style.backgroundColor = "";
+        elemento.style.transition = ".5s";
+      });
+      dropprod.forEach(function(elemento) {
+        elemento.style.color = "";
+        elemento.style.transition = ".5s";
+      });
       console.log('Toggle OFF');
       texto.style.backgroundColor = "";
       texto.style.transition = '.5s';
@@ -78,6 +96,14 @@ const slidePref = localStorage.getItem('slide');
 
 const darkModePreference = localStorage.getItem('darkMode');
 if (darkModePreference === 'on') {
+    drop.forEach(function(elemento) {
+        elemento.style.backgroundColor = "black";
+        elemento.style.transition = ".5s";
+      });
+      dropprod.forEach(function(elemento) {
+        elemento.style.color = "white";
+        elemento.style.transition = ".5s";
+      });
     texto.style.backgroundColor = "#000000e8";
     texto.style.transition = '.5s';
     cont.style.color = "white";
@@ -106,6 +132,14 @@ if (darkModePreference === 'on') {
     toggle.checked = true;
     
 } else {
+    drop.forEach(function(elemento) {
+        elemento.style.backgroundColor = "";
+        elemento.style.transition = ".5s";
+      });
+      dropprod.forEach(function(elemento) {
+        elemento.style.color = "";
+        elemento.style.transition = ".5s";
+      });
     texto.style.backgroundColor = "";
     texto.style.transition = '.5s';
     cont.style.color = "";

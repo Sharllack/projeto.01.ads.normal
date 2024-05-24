@@ -935,3 +935,9 @@ footer {
     font-size: .5em;
 }
 }
+
+@media (min-width: 1349px) {
+    #burguer {
+        display: none;
+    }
+}

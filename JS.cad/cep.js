@@ -40,5 +40,6 @@ window.onload = function() {
 }
 
 function formataCep(v){
-    v.value = v.value.replace(/(\d{5})(\d)/, '$1-$2')
+    v.value = v.value.replace(/\D/g, '');
+    v.value = v.value.replace(/(\d{5})(\d)/, '$1-$2');
 }
